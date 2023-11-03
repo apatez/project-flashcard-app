@@ -53,7 +53,7 @@ function EditDeck() {
 
   const history = useHistory();
 
-  async function submitHandler(event) {
+  async function handleSubmit(event) {
     console.log(deck);
     event.preventDefault();
     const updatedDeck = {
@@ -83,7 +83,7 @@ function EditDeck() {
       <h2>Edit Deck</h2>
       <DeckForm
         deckId={deckId}
-        submitHandler={submitHandler}
+        handleSubmit={handleSubmit}
         formData={formData}
         changeHandler={changeHandler}
       />

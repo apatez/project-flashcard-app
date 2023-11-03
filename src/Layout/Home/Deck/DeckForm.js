@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function DeckForm({ deckId, submitHandler, formData, changeHandler }) {
+function DeckForm({ deckId, handleSubmit, formData, changeHandler }) {
     return (
         
-            <form onSubmit={(event) => submitHandler(event)}>
+            <form onSubmit={(event) => handleSubmit(event)}>
 
             <div className="row col-4">
                 <label htmlFor="name">Name</label>
